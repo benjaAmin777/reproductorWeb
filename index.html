@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizar Metadatos de Canciones</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="plaDisplay">
+
+      <div class="contenedorDatosPlaylist">
+          <div class="cover">
+              <img src="img/cover.png" alt="">
+          </div>
+          <div class="MetadatosPlalist">
+              <div class="identificador">
+                  Playlist
+              </div>
+              <div class="nombrePlaylist">
+                  Las Prohibidas
+              </div>
+              <div class="descripicon">
+                  Las meras meras caguameras
+              </div>
+          </div>
+          
+      </div>
+      
+      <!-- a tráves de la siguiente lista desplegaremos la playlist con el javascript -->
+       <div class="lista">
+        <ul id="playlist" class="playlist">
+            <!-- relleno automatico -->
+             
+        </ul>
+       </div>
+      
+  </div>
+
+  <!-- Div fijo que permanecerá en la pantalla -->
+  <div class="fixedDiv">
+    
+    <div class="reproductionIcons">
+        <!-- <img src="img/icons/bx-play-circle.svg" alt=""> -->
+        <!-- <img src="img/icons/bx-pause-circle.svg" alt=""> -->
+        <audio id="player" ></audio>
+        <button id="previus" onclick="previousSong()"><img src="img/icons/bx-skip-previous.svg" class="controlSP"></button>
+        <button id="play" onclick="play_pause()"><img id="play_pause" src="img/icons/bx-play-circle.svg" alt="" class="controlPP"></button>
+        <button id="next" onclick="nextSong()"><img src="img/icons/bx-skip-next.svg" class="controlSP"></button>
+    </div>
+    <div class="TD">
+        <div id="progress-bar">
+            <div id="progress"></div>
+        </div>
+        <div class="metadata" id="metadata">
+            <p>
+                Ando Soltero
+                <br>
+                Natanael
+            </p>
+        </div>
+    </div>
+    <div class="artCover">
+        <img src="img/placeholderArt.png" id="cover">
+    </div>
+    
+  </div>
+
+  
+  <script src="index.js"></script>
+
+  <!-- Script para cargar la librería jsmediatags -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+  <!-- script para cargar el script del proyecto -->
+  <!-- <script src="audio.js"></script> -->
+</body>
+</html>

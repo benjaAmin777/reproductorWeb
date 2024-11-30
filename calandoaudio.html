@@ -1,0 +1,32 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="onplaying">
+        <audio id="player" ></audio>
+        <button onclick="previousSong()">Anterior</button>
+        <button onclick="play_pause()">Play</button>
+        <button onclick="nextSong()">Siguiente</button>
+
+        <div class="metadata" id="metadata">
+            
+        </div>
+    </div>
+    
+    <div class="playList">
+        <ul id="playlist" class="playlist">
+          
+        </ul>
+    </div>
+    
+    
+    <script src="calandoaudio.js"></script>
+    <!-- Script para cargar la librería jsmediatags -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+    <!-- script para cargar el script del proyecto -->
+    <!-- <script src="audio.js"></script> -->
+</body>
+</html>

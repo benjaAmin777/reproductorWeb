@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualizar Metadatos de Canciones</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="plaDisplay">
+
+      <div class="contenedorDatosPlaylist">
+          <div class="cover">
+              <img src="img/cover.png" alt="">
+          </div>
+          <div class="MetadatosPlalist">
+              <div class="identificador">
+                  Playlist
+              </div>
+              <div class="nombrePlaylist">
+                  Las Prohibidas
+              </div>
+              <div class="descripicon">
+                  Las meras meras caguameras
+              </div>
+          </div>
+          
+      </div>
+      
+      <!-- a tráves de la siguiente lista desplegaremos la playlist con el javascript -->
+       
+      <ul id="playlist" class="playlist">
+          
+      </ul>
+  </div>
+
+  <!-- Div fijo que permanecerá en la pantalla -->
+  <div class="fixedDiv">
+    <audio id="player" controls></audio>
+  </div>
+  <script src="diseño.js"></script>
+
+  <!-- Script para cargar la librería jsmediatags -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsmediatags/3.9.5/jsmediatags.min.js"></script>
+  <!-- script para cargar el script del proyecto -->
+  <!-- <script src="audio.js"></script> -->
+</body>
+</html>
